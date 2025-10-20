@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+  <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
+  </head>
+  <body>
+    <!-- code for calcukator body-->
+    <div class="calculatorBody">
+      <div class="topBox">
+      <!-- name of calculator-->
+      <div class="nameText">Pben calculator
+      </div>
+      <div class="clock" id="clock">9:00</div>
+    </div>
+        <div class="screen">
+        <div class="topScreen">
+       <input type="text" id="screen" class="screen2" placeholder="|">
+          </div>
+        <div class="downScreen" id="screen2"></div>
+        </div>
+        <hr>
+        
+             <!-- Calculator buttons -->
+      <div class="calButtonBox">
+        <button onclick="Clear()">C</button>
+        <button onclick="removeInput()">DEL</button>
+        <button onclick="input('%')">%</button>
+        <button onclick="input('/')">÷</button>
+
+        <button onclick="input(7)">7</button>
+        <button onclick="input(8)">8</button>
+        <button onclick="input(9)">9</button>
+        <button onclick="input('*')">*</button>
+
+        <button onclick="input(4)">4</button>
+        <button onclick="input(5)">5</button>
+        <button onclick="input(6)">6</button>
+        <button onclick="input('-')">-</button>
+
+        <button onclick="input(1)">1</button>
+        <button onclick="input(2)">2</button>
+        <button onclick="input(3)">3</button>
+        <button onclick="input('+')">+</button>
+
+        <button onclick="input(0)">0</button>
+        <button onclick="input(.)">.</button>
+        <button class="equal" onclick="Calculationresult()">=</button>
+      </div>
+    </div>
+
+  </body>
+</html>
