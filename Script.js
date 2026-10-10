@@ -31,7 +31,7 @@ function Calculationresult(){
   try{
    var result=  eval(expression)
    
-   secScreen.innerHTML = result
+   secScreen.innerHTML = parseFloat(result.toFixed(4))
   }catch (err) {
     if(err instanceof syntaxError){
       secScreen.innerHTML = "INVALID EXPRESSION"
