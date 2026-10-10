@@ -31,7 +31,7 @@ function Calculationresult(){
   try{
    var result=  eval(expression)
    
-   secScreen.innerHTML = result.Math.fixed(4)
+   secScreen.innerHTML = result
   }catch (err) {
     if(err instanceof syntaxError){
       secScreen.innerHTML = "INVALID EXPRESSION"
